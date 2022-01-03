@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type MessageType {
+  id: Float!
+  message: String!
+}
+
+type Query {
+  getMessage: MessageType!
+}
+
+type Mutation {
+  setMessage(msg: String!): MessageType!
+}
+
+type Subscription {
+  messageChanged(id: Float!): MessageType!
+}
